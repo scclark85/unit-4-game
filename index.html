@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystals Collector</title>
+
+    <!-- jQuery link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <!-- CSS style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header class="header text-center">
+        <h1>CRYSTALS COLLECTOR</h1>
+    </header>
+
+    <!-- rules of the game -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    You will be give a random number at the start of the game. There are four crystals below. By
+                    clicking
+                    on a
+                    crytal you will add a specific amount of points to your total score. You will win the game by
+                    matching
+                    your
+                    total score to random number, you lose the game if your total score goes above the random number.
+                    The
+                    value
+                    of each crystal is hidden from you until you click on it. Each time when the game starts, the game
+                    will
+                    change the values of each crystal.
+                </p>
+            </div>
+        </div>
+
+
+
+        <!-- this will generate random number for the game -->
+        <div class="header text-center">
+            <h2>
+                Random Number:
+            </h2>
+
+            <h2 id="randomNumber"></h2>
+        </div>
+
+        <!-- Score tracking section -->
+        <div class="row text-center">
+            <div class="col-4">
+                <h2 class="total">
+                    Total Score:
+                </h2>
+
+                <h2 id="totalScore"></h2>
+            </div>
+
+            <div class="col-4">
+                <h2 id="winOrlose"></h2>
+                <button type="button" class="btn btn-outline-light">PLAY AGAIN!</button>
+            </div>
+
+            <div class="col-4">
+                <h3 class="score">Wins:<span id="wins"></span></h3>
+
+
+                <h3 class="score">Losses:<span id="losses"></span></h3>
+            </div>
+        </div>
+
+
+
+        <!-- The crystals -->
+        <div class="row">
+
+            <div class="col-3">
+                <img class="crystalimg" id="crystal1" src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/b/ba/Crystal_mystic.png/revision/latest?cb=20151122000019"
+                    alt="crystal 1">
+            </div>
+
+            <div class="col-3">
+                <img class="crystalimg" id="crystal2" src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/b/b4/Crystal_quest.png/revision/latest?cb=20151122000045"
+                    alt="crystal2">
+            </div>
+
+            <div class="col-3">
+                <img class="crystalimg" id="crystal3" src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/1/1c/2-Star_Crystal.png/revision/latest?cb=20150825213642"
+                    alt="cyrstal 3">
+            </div>
+
+            <div class="col-3">
+                <img class="crystalimg" id="crystal4" src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/c/c3/Crystal_iso8.png/revision/latest?cb=20151121235324"
+                    alt="crystal 4">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
